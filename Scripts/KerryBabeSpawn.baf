@@ -1,0 +1,9 @@
+IF
+GLOBAL("KerryBabeSpawn", "GLOBAL", 0)
+
+THEN RESPONSE #100
+
+CreateCreature("kerbab", [2421.3777],E)
+    
+SetGlobal("KerryBabeSpawn", "GLOBAL", 1)
+END

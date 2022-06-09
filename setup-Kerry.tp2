@@ -1,0 +1,23 @@
+BACKUP ~Kerry/Backup~
+AUTHOR ~Aaron Kummer~
+
+VERSION ~v1.0~
+
+LANGUAGE
+	~English~
+	~English~
+
+BEGIN ~Kerry mod~
+
+COPY ~Kerry/Items/techring.ITM~ ~override~
+COPY ~Kerry/Items/monofil.ITM~ ~override~
+COPY ~Kerry/Items/moonkat.ITM~ ~override~
+COPY ~Kerry/Items/moonbow.ITM~ ~override~
+COMPILE ~Kerry/Dialog/kerryt.d~
+
+COPY ~Kerry/CRE/kerbab.CRE~ ~override~
+	SAY NAME1 ~Kerry~
+	
+WRITE_ASCII DIALOG ~kerryt~ #8
+
+EXTEND_TOP ~BG2300.bcs~ ~Kerry/Scripts/KerryBabeSpawn.baf~
